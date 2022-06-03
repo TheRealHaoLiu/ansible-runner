@@ -1,0 +1,7 @@
+FROM brew.registry.redhat.io/rh-osbs/ansible-automation-platform-22-ee-supported-rhel8@sha256:5f0cf5b2242ce9c8329bac7ffbf4b32cafa144bc2500788d41a97855d386382f
+
+COPY ansible_runner/interface.py /usr/lib/python3.9/site-packages/ansible_runner/interface.py
+COPY ansible_runner/utils/__init__.py /usr/lib/python3.9/site-packages/ansible_runner/utils/__init__.py
+COPY ansible_runner/config/_base.py /usr/lib/python3.9/site-packages/ansible_runner/config/_base.py
+
+RUN touch yoloswag
